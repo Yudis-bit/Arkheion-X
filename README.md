@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="URL_TO_YOUR_LOGO_HERE" alt="ARKHEION-X Sigil" width="150"/>
-</p>
+
 
 <h1 align="center">ARKHEION-X</h1>
 
