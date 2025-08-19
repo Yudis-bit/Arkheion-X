@@ -7,7 +7,7 @@
   <br/><br/>
   <a href="https://github.com/Yudis-bit/Arkheion-X/actions"><img src="https://img.shields.io/github/actions/workflow/status/Yudis-bit/Arkheion-X/main.yml?style=for-the-badge&logo=githubactions&logoColor=white&label=Build" alt="Build Status"></a>
   <a href="https://github.com/Yudis-bit/Arkheion-X/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Yudis-bit/Arkheion-X?style=for-the-badge&color=blue" alt="License"></a>
-  <a href="https://twitter.com/arkheionx"><img src="https://img.shields.io/twitter/follow/arkheionx?style=for-the-badge&logo=x" alt="Follow on X"></a>
+  <a href="https://twitter.com/ArkheionX"><img src="https://img.shields.io/twitter/follow/arkheionx?style=for-the-badge&logo=x" alt="Follow on X"></a>
 </p>
 
 ---
