@@ -21,9 +21,9 @@ ARKHEION-X is an active project focused on creating robust, self-sufficient syst
 
 | Module | Status | Description |
 | :--- | :--- | :--- |
-| 🛡️ **Vektor Sentinel** | `[ v0.6.0 - AUTONOMOUS ]` | Real-time software supply chain threat hunter. |
-| 📈 **Quant Engine** | `[ v1.1 - PROTOTYPE ]` | Alpha-Intel engine for on-chain & off-chain data. |
-| 🧠 **Athena Engine** | `[ RESEARCH ]` | PsyOps & narrative analysis engine. |
+|  **Vektor Sentinel** | `[ v0.6.0 - AUTONOMOUS ]` | Real-time software supply chain threat hunter. |
+|  **Quant Engine** | `[ v1.1 - PROTOTYPE ]` | Alpha-Intel engine for on-chain & off-chain data. |
+|  **Athena Engine** | `[ RESEARCH ]` | PsyOps & narrative analysis engine. |
 
 ### Module Spotlight: Quant Engine
 The Quant Engine is our first step into alpha intelligence. It's a high-resilience Python engine designed to monitor blockchain networks for market-moving events in real-time.
