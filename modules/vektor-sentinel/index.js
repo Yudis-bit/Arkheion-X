@@ -1,6 +1,6 @@
 // =============================================================================
-// == VEKTOR SENTINEL v0.4.3
-// == CONSOLIDATED POLLING & BROADCASTING ENGINE (COMPONENT UPGRADE)
+// == VEKTOR SENTINEL v0.6.0
+// == INTERNATIONAL STANDARD // ACTIONS-READY STATELESS ENGINE
 // == AUTHOR: ARKHEION-X HYPEROPS
 // =============================================================================
 
@@ -8,10 +8,7 @@
 require('dotenv').config();
 const axios = require('axios');
 const fastq = require('fastq');
-// =============================================================================
-// == COMPONENT UPGRADE: Menggunakan modul 'js-levenshtein' yang lebih andal ==
 const levenshtein = require('js-levenshtein');
-// =============================================================================
 const { TwitterApi } = require('twitter-api-v2');
 
 // --- PHASE 2: MISSION CONFIGURATION ---
@@ -52,14 +49,14 @@ async function analyzePackage(change) {
         for (const popular of POPULAR_PACKAGES) {
             const distance = levenshtein(packageName, popular);
             if (distance > 0 && distance <= TYPO_THRESHOLD) {
-                const alertMessage = `⚠️ Vektor Sentinel Alert ⚠️
+                const alertMessage = `[VEKTOR SENTINEL // ALERT]
 
-Potential Typosquatting Attack Detected:
-- Package: \`${packageName}\`
-- Impersonating: \`${popular}\`
-- Confidence Level: HIGH (Distance: ${distance})
+SIG-TYPE: Typosquatting
+TARGET: \`${packageName}\`
+MIMICS: \`${popular}\`
+CONFIDENCE: HIGH (dist: ${distance})
 
-#CyberSecurity #NPM #SupplyChainAttack #OpenSource #InfoSec`;
+#CyberSecurity #NPM #SupplyChainAttack #ARKHEIONX`;
                 
                 console.warn(`[!!!] TARGET LOCKED: ${packageName} (Impersonating: ${popular})`);
                 await postToTwitter(alertMessage);
@@ -83,7 +80,7 @@ async function pollingEngine() {
         for (const pkg of packages) {
             const packageName = pkg.package.name;
             if (!processedPackages.has(packageName)) {
-                console.log(`[+] New package found via polling: ${packageName}`);
+                console.log(`[+] New package found: ${packageName}`);
                 processedPackages.add(packageName);
                 
                 const fakeChange = { doc: { name: packageName } };
@@ -95,14 +92,8 @@ async function pollingEngine() {
     }
 }
 
-// --- PHASE 6: MISSION START ---
-
-function startMission() {
-    console.log('[*] Vektor Sentinel v0.4.3 activated. Polling Engine is LIVE.');
-    console.log('[*] OPSEC Check: Ensure your .env file is loaded and correct.');
-    
-    pollingEngine();
-    setInterval(pollingEngine, 30000); 
-}
-
-startMission();
+// --- MISSION EXECUTION ---
+// Direct engine execution. No loops, no startMission.
+// GitHub Actions (cron) will serve as the loop.
+console.log('[*] ARKHEION-X Agent activated. Executing mission...');
+pollingEngine();
