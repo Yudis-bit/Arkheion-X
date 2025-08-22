@@ -21,12 +21,6 @@
 
 ---
 
-<div align="center">
-  ![ARKHEION-X Quant Engine Dashboard Demo](URL_GIF_DEMO_ANDA_DI_SINI)
-</div>
-
----
-
 ## What is ARKHEION-X?
 
 **ARKHEION-X** is an open-core framework for building and deploying autonomous agents that provide an asymmetric advantage in hostile digital environments. We operate at the intersection of cybersecurity, quantitative analysis, and decentralized systems.
