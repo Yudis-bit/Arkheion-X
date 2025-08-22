@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: arkheionx_quant_engine
+Version: 0.1.0
+Summary: ARKHEION-X Intelligence Agents
+Author: Yudis-bit
+License-File: LICENSE
+Requires-Dist: python-dotenv
+Requires-Dist: web3
+Requires-Dist: requests
+Requires-Dist: streamlit
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: python-telegram-bot
+Dynamic: author
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
